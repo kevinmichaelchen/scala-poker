@@ -8,9 +8,11 @@ class Game {
 object Deck {
   val cards : List[Card] = createDeck
   private def createDeck : List[Card] = {
+    var myList : List[Card] = Nil
     for (number <- 2 to 13)
       for (suit <- Suit.values)
-        cards.:::List(Card(number, suit))
+        cards ::: List(new Card(number, suit))
+    myList
   }
 }
 
