@@ -1,3 +1,6 @@
+/**
+  * A person who plays our game.
+  */
 class Player {
 
   val MAX_CHAR_NAME: Int = 10
@@ -5,7 +8,14 @@ class Player {
   private var _name: String = _
   private var _id: Int = _
   private var _cash: Int = _
-  
+
+  override def toString = "Player " + _id + ", " + _name + " has " + _cash + " in cash" 
+
+  /** 
+    * @constructor create a new player with name and id
+    * @param name the player's name
+    * @param id the player's ID
+    */  
   def this(name: String, id: Int) {
     this()
     _name = name
