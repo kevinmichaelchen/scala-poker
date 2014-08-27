@@ -5,4 +5,4 @@ clean:
 	rm bin/*
 
 run:
-	scala -classpath bin/ Singleton
+	scala -classpath bin/ Main
